@@ -4,4 +4,4 @@ echo "DELETING FILES"
 
 rm -r Files
 
-eho "DONE DELTEING FILES"
+echo "DONE DELTEING FILES"
