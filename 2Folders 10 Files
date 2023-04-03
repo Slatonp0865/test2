@@ -1,0 +1,33 @@
+#! /bin/bash
+echo "create folder"
+
+mkdir Files
+
+mkdir Files2
+
+echo "creating files"
+
+dd if=/dev/zero of=Files/File1 bs=1M count=10
+dd if=/dev/zero of=Files/File2 bs=1M count=10
+dd if=/dev/zero of=Files/File3 bs=1M count=10
+dd if=/dev/zero of=Files/File4 bs=1M count=10
+dd if=/dev/zero of=Files/File5 bs=1M count=10
+dd if=/dev/zero of=Files/File6 bs=1M count=10
+dd if=/dev/zero of=Files/File7 bs=1M count=10
+dd if=/dev/zero of=Files/File8 bs=1M count=10
+dd if=/dev/zero of=Files/File9 bs=1M count=10
+dd if=/dev/zero of=Files/File10 bs=1M count=10
+
+
+dd if=/dev/zero of=Files2/File1 bs=1M count=10
+dd if=/dev/zero of=Files2/File2 bs=1M count=10
+dd if=/dev/zero of=Files2/File3 bs=1M count=10
+dd if=/dev/zero of=Files2/File4 bs=1M count=10
+dd if=/dev/zero of=Files2/File5 bs=1M count=10
+dd if=/dev/zero of=Files2/File6 bs=1M count=10
+dd if=/dev/zero of=Files2/File7 bs=1M count=10
+dd if=/dev/zero of=Files2/File8 bs=1M count=10
+dd if=/dev/zero of=Files2/File9 bs=1M count=10
+dd if=/dev/zero of=Files2/File10 bs=1M count=10
+
+echo "DONE CREATING FILES"
