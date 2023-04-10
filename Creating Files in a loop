@@ -1,0 +1,17 @@
+#! /bin/bash
+
+fn=10
+echo "create folder"
+
+mkdir Files
+
+echo "creating files"
+
+for i in $(seq 1 $fn)
+do
+
+dd if=/dev/zero of=Files/File$i bs=1M count=10
+
+done
+
+echo "DONE CREATING FILE"
