@@ -1,0 +1,13 @@
+#! /bin/bash
+
+echo "DELETING FILES"
+
+rm -r Files1
+rm -r Files2
+rm -r Files3
+rm -r Files4
+rm -r Files5
+rm -r Files6
+rm -r Files7
+
+echo "DONE DELTEING FILES"
