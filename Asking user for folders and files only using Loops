@@ -1,0 +1,28 @@
+#! /bin/bash
+
+echo Hello, how many Folders would you want?
+
+read p
+
+echo "create folder"
+
+
+for p in $(seq 1 $p)
+do
+        mkdir Files$p
+done
+for k in $(seq 1 $p)
+do
+        echo "creating files"
+
+        echo "Hello, how many files would you want in folder$k?"
+
+        read o
+
+        for i in $(seq 1 $o)
+        do
+                dd if=/dev/zero of=Files$k/File$i bs=1M count=10
+        done
+
+        echo "DONE CREATING FILE"
+done
