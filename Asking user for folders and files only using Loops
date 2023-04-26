@@ -2,6 +2,10 @@
 
 echo Hello, how many Folders would you want?
 
+mkdir All_Folders
+
+cd All_Folders
+
 read p
 
 echo "create folder"
@@ -11,7 +15,7 @@ for p in $(seq 1 $p)
 do
         mkdir Files$p
 done
-for k in $(seq 1 $p)
+        for k in $(seq 1 $p)
 do
         echo "creating files"
 
@@ -26,3 +30,5 @@ do
 
         echo "DONE CREATING FILE"
 done
+
+cd
